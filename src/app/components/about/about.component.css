@@ -1,0 +1,52 @@
+.abt-img {
+  /* width: 90%; */
+  max-height: 600px;
+}
+.about {
+  background-color: black;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+.shadow {
+  font-size: 60px;
+  background-blend-mode: multiply;
+  color: rgb(26, 23, 23);
+}
+.with-out-shadow {
+  position: relative;
+  top: 30px;
+}
+.values p {
+  /* margin-left: 20px; */
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+  padding-top: 10px;
+}
+.fields h5 {
+  /* margin-left: 20px; */
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 20px;
+}
+button {
+  background-color: #ffbd39;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+}
+.about p {
+  padding-top: 20px;
+  color: #999999;
+}

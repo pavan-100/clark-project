@@ -1,0 +1,99 @@
+<div class="contact">
+  <h1>Contact Me</h1>
+  <p>
+    Far far away, behind the word mountains, far from the countries Vokalia and
+    Consonantia
+  </p>
+  <div class="imapage">
+    <div fxLayout="row" fxLayoutAlign="space-evenly center">
+      <div>
+        <img src="../../../assets/map.jpeg" height="100px" />
+        <h3>ADDRESS</h3>
+        <p>198 West 21th Street, Suite</p>
+        <p>721 New York NY 10016</p>
+      </div>
+      <div>
+        <img src="../../../assets/contact.png" height="100px" />
+        <h3>CONTACT NUMBER</h3>
+        <p>+ 1235 2355 98</p>
+      </div>
+      <div>
+        <img src="../../../assets/1034262.svg" height="100px" />
+        <h3>EMAIL ADDRESS</h3>
+        <p>nfo@yoursite.com</p>
+      </div>
+      <div>
+        <img src="../../../assets/globe.jpeg" height="100px" />
+        <h3>WEBSITE</h3>
+        <p>yoursite.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="text">
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <img src="../../../assets/bg_1.png" width="400px" height="450px" />
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+          <input
+            type="text"
+            name="name"
+            placeholder="YourName"
+            [(ngModel)]="contact.name"
+            #contactName="ngModel"
+            required
+          />
+          <div class="error" *ngIf="!contactName.valid && contactName.touched">
+            User name is required!
+          </div>
+          <input
+            type="text"
+            name="email"
+            placeholder="YourEmail"
+            [(ngModel)]="contact.email"
+            #contactEmail="ngModel"
+            required
+          />
+          <div
+            class="error"
+            *ngIf="!contactEmail.valid && contactEmail.touched"
+          >
+            User email is required!
+          </div>
+          <input
+            type="text"
+            name="subject"
+            placeholder="subject"
+            [(ngModel)]="contact.subject"
+            #contactSubject="ngModel"
+            required
+          />
+          <div
+            class="error"
+            *ngIf="!contactSubject.valid && contactSubject.touched"
+          >
+            User subject is required!
+          </div>
+          <input
+            type="text"
+            name="message"
+            placeholder="Message"
+            [(ngModel)]="contact.message"
+            #contactMessage="ngModel"
+            required
+          />
+          <div
+            class="error"
+            *ngIf="!contactMessage.valid && contactMessage.touched"
+          >
+            User message is required!
+          </div>
+          <button type="submit" [disabled]="!contactForm.valid">
+            Register
+          </button>
+          <!-- </div>
+</div> -->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

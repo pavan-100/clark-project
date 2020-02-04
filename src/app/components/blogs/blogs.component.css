@@ -1,0 +1,9 @@
+.banner {
+  background-image: url("../../../assets/bg_1.jpg");
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+button {
+  text-align: center;
+}

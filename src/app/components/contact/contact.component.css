@@ -1,0 +1,26 @@
+.contact {
+  background-color: #000000;
+  color: #999999;
+}
+img {
+  /* background-color: red; */
+  border-radius: 50px;
+}
+mat-form-field {
+  width: 350px;
+  color: #999999;
+}
+button {
+  background-color: yellow;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 40px;
+}
+.text {
+  background-color: black;
+}
+.text img {
+  background-color: #343a40;
+  border-radius: 1px;
+}
