@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResumesService } from './resumes.service';
 
 @Component({
   selector: 'app-resume',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
-
-  constructor() { }
+content: any[];
+  constructor(
+    private _resumeService: ResumesService) {
+      this.content = _resumeService.getContent();
+     }
 
   ngOnInit() {
   }

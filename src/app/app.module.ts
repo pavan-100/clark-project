@@ -2,7 +2,7 @@
 
 import { BannerComponent } from "./components/banner/banner.component";
 import { AboutComponent } from "./components/about/about.component";
-import { ResumeComponent } from "./components/resume/resume.component";
+
 import { ServicesComponent } from "./components/services/services.component";
 import { SkilsComponent } from "./components/skils/skils.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
@@ -11,6 +11,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { AppComponent } from "./app.component";
+import { ResumeComponent } from "./components/resume/resume.component";
 
 // """""""""""""""""""""""""  Pages  """""""""""""""""""""""""""""""""""
 
@@ -23,6 +24,10 @@ import { NgModule } from "@angular/core";
 import { SharedModule } from "./shared/shared.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
+
+// """""""""""""""""""""""""  Services  """""""""""""""""""""""""""""""""""
+import { CardService } from '../app/components/services/card.service'
+import { ResumesService } from './components/resume/resumes.service';
 
 @NgModule({
   declarations: [
@@ -37,10 +42,10 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     ProjectsComponent,
     BlogsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FlexLayoutModule, SharedModule],
-  providers: [],
+  providers: [ResumesService, CardService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
